@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/new/Main">
+        <file>image/管理界面.png</file>
+        <file>image/管理界面 张帆背景.png</file>
+        <file>image/管理界面 退出有框.png</file>
+        <file>image/管理界面 取.png</file>
+        <file>image/管理界面 取 有框.png</file>
+        <file>image/管理界面 管理.png</file>
+        <file>image/管理界面 管理 有框.png</file>
+        <file>image/管理界面 存.png</file>
+        <file>image/管理界面 存 没框.png</file>
+        <file>image/管理界面 测试6.png</file>
+        <file>image/管理界面 测试5.png</file>
+        <file>image/管理界面 测试4.png</file>
+        <file>image/管理界面 测试3.png</file>
+        <file>image/管理界面 测试2.png</file>
+        <file>image/管理界面 测试1.png</file>
+        <file>image/管理界面 退出.png</file>
+        <file>image/管理界面背景.png</file>
+        <file>image/lock.png</file>
+    </qresource>
+</RCC>

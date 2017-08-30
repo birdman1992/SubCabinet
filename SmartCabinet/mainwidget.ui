@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWidget{border-image: url(:/new/Main/image/管理界面 张帆背景.png);}
+
+#save:checked{
+border-image: url(:/new/Main/image/管理界面 存.png);
+}
+#save:!checked{
+border-image: url(:/new/Main/image/管理界面 存 没框.png);
+}
+#take:checked{
+border-image: url(:/new/Main/image/管理界面 取 有框.png);
+}
+#take:!checked{
+border-image: url(:/new/Main/image/管理界面 取.png);
+}
+#admin:checked{
+border-image: url(:/new/Main/image/管理界面 管理 有框.png);
+}
+#admin:!checked{
+border-image: url(:/new/Main/image/管理界面 管理.png);
+}
+#pullOut:checked{
+border-image: url(:/new/Main/image/管理界面 退出有框.png);
+}
+#pullOut:!checked{
+border-image: url(:/new/Main/image/管理界面 退出.png);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>77</number>
+   </property>
+   <property name="topMargin">
+    <number>66</number>
+   </property>
+   <property name="rightMargin">
+    <number>77</number>
+   </property>
+   <property name="bottomMargin">
+    <number>66</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="mainLayout" stretch="2,10">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="titleLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>240</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>310</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="lock">
+          <property name="geometry">
+           <rect>
+            <x>64</x>
+            <y>100</y>
+            <width>88</width>
+            <height>88</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/new/Main/image/lock.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="save">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="take">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="admin">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pullOut">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QStackedWidget" name="stack">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>140</y>
+          <width>1071</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius:13px;
+}
+
+QPushButton:pressed{
+margin-left:2px;
+margin-top:2px;
+margin-right:2px;
+margin-bottom:2px;
+}</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>400</y>
+            <width>281</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/new/Main/image/管理界面 测试6.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QFrame" name="frame_2">
+          <property name="geometry">
+           <rect>
+            <x>83</x>
+            <y>210</y>
+            <width>577</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius:13px;
+border-image: url(:/new/Main/image/管理界面 测试4.png);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="geometry">
+           <rect>
+            <x>680</x>
+            <y>19</y>
+            <width>281</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/new/Main/image/管理界面 测试3.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton">
+          <property name="geometry">
+           <rect>
+            <x>83</x>
+            <y>19</y>
+            <width>281</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/new/Main/image/管理界面 测试1.png);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>19</y>
+            <width>281</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/new/Main/image/管理界面 测试2.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>83</x>
+            <y>400</y>
+            <width>281</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/new/Main/image/管理界面 测试6.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="geometry">
+           <rect>
+            <x>680</x>
+            <y>210</y>
+            <width>281</width>
+            <height>360</height>
+           </rect>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/new/Main/image/管理界面 测试5.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>260</y>
+            <width>241</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 20px &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>当前功能施工中……</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_3">
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>260</y>
+            <width>321</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 20px &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>当前功能施工中……</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_4">
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>260</y>
+            <width>321</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 20px &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>当前功能施工中……</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
